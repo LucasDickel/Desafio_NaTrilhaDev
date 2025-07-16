@@ -1,0 +1,592 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ================================
+   RESET & BASE
+==================================*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+/* ================================
+   HEADER / LOGO / HERO
+==================================*/
+header {
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: auto;
+    height: 135px;
+    margin: auto;
+    padding: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.textos1 h1, .textos1 h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 64px;
+}
+
+.textos1 h1 {
+    color: white;
+}
+
+.textos1 h2 {
+    color: #c9f31d;
+}
+
+.textos1 p {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+/* ================================
+   BOTÃO DE INSCREVER
+==================================*/
+.botao-inscrever {
+    margin-top: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.botao-inscrever a {
+    color: #000;
+    background-color: #c9f31d;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    width: 369px;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.botao-inscrever a:hover {
+    background-color: #d1eb6a;
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================
+   APRENDIZADO
+==================================*/
+.aprendizado {
+    background-color: #c9f31d;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.aprendizado h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    padding-top: 30px;
+}
+
+.cards, .cards2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 20px 60px;
+    padding: 30px;
+}
+
+.card, .card2 {
+    width: 511px;
+    height: 495px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card {
+    background-color: #000;
+}
+
+.card2 {
+    background-color: #c9f31d;
+}
+
+.card:hover, .card2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card img, .card2 img {
+    width: 102px;
+    height: 102px;
+    margin: 10px;
+    padding: 80px 10px 10px 10px;
+}
+
+.card h3, .card2 h3 {
+    font-size: 36px;
+    font-weight: 700;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.card p, .card2 p {
+    font-size: 24px;
+    padding: 10px;
+    line-height: 40px;
+    font-family: "Roboto", sans-serif;
+}
+
+.card h3, .card p {
+    color: #fff;
+}
+
+.card2 h3, .card2 p {
+    color: #201f1f;
+}
+
+.cards2 a {
+    background-color: #000;
+    color: #c9f31d;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* ================================
+   TRILHA CHALLENGE
+==================================*/
+.trilha {
+    background-color: #000;
+    padding: 80px 20px;
+    height: 800px;
+    display: flex;
+}
+
+.trilha-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.img-trilha {
+    display: flex;
+    align-items: center;
+}
+
+.img-trilha img {
+    width: 588px;
+    height: 722px;
+}
+
+.textos2 h1 {
+    font-size: 96px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    max-width: 600px;
+}
+
+.textos2 p {
+    font-size: 28px;
+    color: #fff;
+    line-height: 50px;
+    max-width: 863px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+}
+
+.btn-trilha {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px;
+    width: 200px;
+    background-color: #c9f31d;
+    color: #000;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-trilha:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* ================================
+   LISTA DE APRENDIZADO
+==================================*/
+.lista {
+    background-color: #c9f31d;
+    display: flex;
+    align-items: center;
+    height: 875px;
+}
+
+.bloco-lista {
+    margin: 60px auto;
+    line-height: 40px;
+    align-items: center;
+}
+
+.bloco-topo, .bloco-rodape {
+    background-color: #000;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.bloco-topo h2, .bloco-rodape h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+}
+
+.bloco-conteudo {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.bloco-conteudo ol li {
+    font-size: 28px;
+    color: #000;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* ================================
+   RODAPE PRINCIPAL
+==================================*/
+.footer-principal {
+    background-color: #000;
+    padding: 20px 0;
+    height: 180px;
+}
+
+.container-footer {
+    max-width: 1600px;
+    margin: 70px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-principal p {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-principal p span {
+    color: #c9f31d;
+}
+
+.footer-principal a {
+    color: #c9f31d;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+}
+
+/* ================================
+   SEGUNDA PÁGINA
+==================================*/
+section.mensagem {
+    background-image: url(../imagens/fundo-verde.png);
+    background-color: #18240ce8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mensagem h1 {
+    font-size: 64px;
+    color: #c9f31d;
+    padding: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+
+.mensagem p {
+    font-size: 32px;
+    color: #fff;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* ================================
+   REDES SOCIAIS
+==================================*/
+.links-socias {
+    background-color: #201f1f;
+    padding: 60px 20px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links-socias h2 {
+    font-size: 40px;
+    padding-top: 30px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+
+.links-socias h2 span {
+    color: #c9f31d;
+}
+
+/* ================================
+   RODAPÉ 2
+==================================*/
+footer.roda {
+    background-color: #c9f31d;
+    height: 450px;
+}
+
+.rodape2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape2 h2 {
+    font-size: 64px;
+    padding: 100px 0 80px 0;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.rodape2 a {
+    font-size: 24px;
+    padding: 20px;
+    width: 202px;
+    background-color: #000;
+    color: #c9f31d;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.rodape2 a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* ================================
+   RESPONSIVO
+==================================*/
+@media (max-width: 768px) {
+
+    /*parte do cabecalho*/
+
+    header {
+        height: 85vh !important; 
+    }
+
+    .container1 {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .logo img {
+        padding: 50px 0px 10px;
+        width: 300px;
+        height: auto;
+        padding: 10px 0px;
+    }
+
+    .textos1 h1, .textos1 h2 {
+        font-size: 26px !important ;
+    }
+
+    .textos1 p {
+        font-size: 18px;
+        padding: 20px 40px;
+    }
+
+    .textos1 p br {
+        display: none;
+    }
+
+    /*parte dos cards*/
+
+    .aprendizado h2 {
+        font-size: 40px;
+    }
+
+    .cards, .cards2 {
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .card, .card2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .botao-inscrever a {
+        padding: 15px 0px;
+        font-size: 24px;
+    }
+
+    /* parte trilha */
+    
+    .trilha {
+        position: relative;
+        height: auto;
+        padding: 40px 20px;
+        
+    }
+
+    .img-trilha img {
+        display: flex;
+        margin: auto;
+        width: 80%;
+        height: auto;
+    }
+
+    .textos2 h1 {
+        font-size: 40px;
+    }
+
+    .textos2 p {
+        font-size: 25px;
+    }
+
+    /* parte da lista*/
+
+    .lista {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .bloco-topo h2, .bloco-rodape h2 {
+        font-size: 28px;
+    }
+
+    .bloco-conteudo ol li {
+        font-size: 24px;
+    }
+
+    /*rodape pagina 1*/
+
+    .footer-principal {
+        height: 180px;
+        
+    }
+
+    .container-footer {
+        margin: 0;
+    }
+
+    .footer-principal p  {
+        font-size: 20px;
+        padding: 30px;  
+        text-align: center;
+        
+    }
+
+    .footer-principal a {
+        display: flex;
+        text-align: center;
+        margin: auto;
+    }
+
+    /*SEGUNDA PAGINA*/
+
+    .mensagem p {
+        font-size: 30px;
+    }
+
+    .mensagem p br {
+        display: none;
+    }
+
+    .links-socias {
+        height: 265vh;
+        position: relative;
+    }
+
+    .links-socias h2 {
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /*rodape segunda pagina*/
+
+    .rodape2 {
+        height: 180px;
+        padding: 60px 0px;
+    }
+
+    .rodape2 h2 {
+        font-size: 50px;
+        display: flex;
+        text-align: center;
+        margin: auto;
+    }
+}
